@@ -1,0 +1,23 @@
+{
+    "name": "softwarewisdom/diemclient",
+    "description": "PHP HTTP client for Diem",
+    "type": "library",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Anru chen",
+            "email": "softwarewisdomltd@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.4",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Softwarewisdom\\Diem\\": "src/"
+        }
+    }
+}

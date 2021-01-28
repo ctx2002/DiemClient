@@ -1,4 +1,5 @@
 <?php
+
 namespace Softwarewisdom\Diem;
 
 interface CoinInterface

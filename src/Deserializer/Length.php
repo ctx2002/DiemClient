@@ -10,6 +10,9 @@ use Softwarewisdom\LEB128\Unsigned\Decode;
 /**
  * Class Length
  * @package Softwarewisdom\Diem\Deserializer
+ *
+ * this is lenght is for bcs encoded string,
+ * it indicates how many SignedTransaction been encoded into the string.
  */
 class Length extends DiemTypeDeserializer implements Deserializer
 {

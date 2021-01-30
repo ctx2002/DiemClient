@@ -6,6 +6,7 @@ namespace Softwarewisdom\Diem\Deserializer;
 
 use RuntimeException;
 use Softwarewisdom\Diem\ByteBuffer;
+use Softwarewisdom\Diem\DiemCounter;
 
 /**
  * Class DiemTypeDeserializer
@@ -19,12 +20,19 @@ class DiemTypeDeserializer
     protected ByteBuffer $buffer;
 
     /**
+     * @var DiemCounter
+     */
+    private DiemCounter $counter;
+
+    /**
      * DiemTypeDeserializer constructor.
      * @param ByteBuffer $byteBuffer
+     * @param DiemCounter $counter
      */
-    public function __construct(ByteBuffer $byteBuffer)
+    public function __construct(ByteBuffer $byteBuffer, DiemCounter $counter)
     {
         $this->buffer = $byteBuffer;
+        $this->counter = $counter;
     }
 
     /**
@@ -48,5 +56,15 @@ class DiemTypeDeserializer
             }
         }
         return $digits;
+    }
+
+    public function containerSizeDecrease(): void
+    {
+        $this->counter->containerSizeDecrease();
+    }
+
+    public function containerSizeIncrease(): void
+    {
+        $this->counter->containerSizeIncrease();
     }
 }

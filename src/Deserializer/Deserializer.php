@@ -14,9 +14,4 @@ interface Deserializer
      *
      */
     public function run(): self;
-
-    /**
-     * @return int
-     */
-    public function value(): int;
 }

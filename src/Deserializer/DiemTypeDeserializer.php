@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Softwarewisdom\Diem\Deserializer;
 
+use OverflowException;
 use RuntimeException;
 use Softwarewisdom\Diem\ByteBuffer;
 use Softwarewisdom\Diem\DiemCounter;
@@ -54,8 +55,9 @@ class DiemTypeDeserializer
                 }
                 return $digits;
             }
+
         }
-        return $digits;
+        throw new OverflowException('Overflow while parsing uleb128 number');
     }
 
     public function containerSizeDecrease(): void

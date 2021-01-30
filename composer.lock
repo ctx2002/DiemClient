@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "243539fee4898be2be31395d832a09f6",
+    "content-hash": "7a0adb7173b45b12c7190fea5bb711a7",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -346,6 +346,49 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "softwarewisdom/leb128",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ctx2002/LEB128.git",
+                "reference": "30faa28f1162914c1fa60d0a8b5a60961c8bacdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ctx2002/LEB128/zipball/30faa28f1162914c1fa60d0a8b5a60961c8bacdb",
+                "reference": "30faa28f1162914c1fa60d0a8b5a60961c8bacdb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Softwarewisdom\\LEB128\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "anru chen",
+                    "email": "softwarewisdomltd@gmail.com"
+                }
+            ],
+            "description": "LEB128 encoding and decoding",
+            "support": {
+                "issues": "https://github.com/ctx2002/LEB128/issues",
+                "source": "https://github.com/ctx2002/LEB128/tree/v1.2"
+            },
+            "time": "2021-01-30T03:16:45+00:00"
         }
     ],
     "packages-dev": [],
@@ -354,6 +397,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "php": ">=7.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

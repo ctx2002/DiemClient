@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Softwarewisdom\Diem\Deserializer;
 
-
 use Softwarewisdom\Diem\ByteBuffer;
 
 /**
@@ -38,5 +37,4 @@ class UInt8Deserializer implements Deserializer
     {
         return $this->byte;
     }
-
 }

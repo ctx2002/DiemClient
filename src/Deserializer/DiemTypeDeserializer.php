@@ -23,7 +23,7 @@ class DiemTypeDeserializer
     /**
      * @var DiemCounter
      */
-    private DiemCounter $counter;
+    protected DiemCounter $counter;
 
     /**
      * DiemTypeDeserializer constructor.

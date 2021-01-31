@@ -7,5 +7,4 @@ namespace Softwarewisdom\Diem\DiemTypes;
 
 interface TransactionPayload
 {
-
 }

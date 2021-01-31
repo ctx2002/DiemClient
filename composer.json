@@ -15,7 +15,8 @@
         "php" : ">=7.4",
         "guzzlehttp/guzzle": "^7.2",
         "softwarewisdom/leb128": "^1.2",
-      "ext-json": "*"
+      "ext-json": "*",
+      "ext-mbstring": "*"
     },
     "autoload": {
         "psr-4": {

@@ -3,7 +3,6 @@
     "description": "PHP HTTP client for Diem",
     "type": "library",
     "license": "MIT",
-
     "authors": [
         {
             "name": "Anru chen",
@@ -12,15 +11,23 @@
         }
     ],
     "require": {
-        "php" : ">=7.4",
+        "php": ">=7.4",
         "guzzlehttp/guzzle": "^7.2",
         "softwarewisdom/leb128": "^1.2",
-      "ext-json": "*",
-      "ext-mbstring": "*"
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "symfony/serializer": "^5.2",
+        "symfony/property-access": "^5.2",
+        "doctrine/annotations": "^1.11"
     },
     "autoload": {
         "psr-4": {
             "Softwarewisdom\\Diem\\": "src/"
         }
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
     }
 }

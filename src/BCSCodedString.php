@@ -37,7 +37,7 @@ class BCSCodedString
     {
         $r = str_split($this->bcs, 2);
         $this->bytes = array_map(
-            static function (string $item) {
+            static function (string $item): int {
                 return intval($item, 16);
             },
             $r

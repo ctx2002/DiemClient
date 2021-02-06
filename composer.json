@@ -28,6 +28,14 @@
     "require-dev": {
         "codeception/codeception": "^4.1",
         "codeception/module-phpbrowser": "^1.0.0",
-        "codeception/module-asserts": "^1.0.0"
+        "codeception/module-asserts": "^1.0.0",
+        "phpstan/phpstan-strict-rules": "^0.12.9"
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
     }
 }

@@ -21,15 +21,15 @@ class RawTransaction
     }
 
     /**
-     * @retrun array{
-     *     'Sender': array<int>,
-     *     "SequenceNumber": int,
-     *     "Payload": string,
-     *     "MaxGasAmount": int,
-     *     "GasUnitPrice": int,
-     *     "GasCurrencyCode": string
-     *     "ExpirationTimestampSecs": string
-     *     "ChainId" : int
+     * @return array{
+     *     Sender: array<int, int>,
+     *     SequenceNumber: int,
+     *     Payload: string,
+     *     MaxGasAmount: int,
+     *     GasUnitPrice: int,
+     *     GasCurrencyCode: string,
+     *     ExpirationTimestampSecs: int,
+     *     ChainId : int
      * }
      * **/
     public function toArray(): array
@@ -41,7 +41,7 @@ class RawTransaction
             'MaxGasAmount' => 1,
             'GasUnitPrice' => 1,
             'GasCurrencyCode' => 'XUD',
-            'ExpirationTimestampSecs' => '1611620650',
+            'ExpirationTimestampSecs' => 1611620650,
             'ChainId' => 2
         ];
     }

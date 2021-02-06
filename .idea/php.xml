@@ -80,6 +80,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan-strict-rules" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
@@ -87,7 +89,7 @@
   </component>
   <component name="PhpStan">
     <PhpStan_settings>
-      <PhpStanConfiguration tool_path="$USER_HOME$/AppData/Roaming/Composer/vendor/bin/phpstan" />
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/vendor/bin/phpstan" />
     </PhpStan_settings>
   </component>
 </project>

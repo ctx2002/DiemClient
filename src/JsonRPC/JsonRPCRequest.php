@@ -13,6 +13,9 @@ class JsonRPCRequest
      * @SerializedName("method")
      */
     public string $jsonMethod;
+    /**
+     * @var array<mixed>
+     * **/
     public array $params;
     public int $id;
 

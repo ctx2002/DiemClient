@@ -64,7 +64,7 @@ class TestNetMint implements MintInterface
             (int)$response->getBody()->getContents(),
             $this->account->address()
         );
-        $coin->setAuthkey($this->account->authKey());
+        $coin->setAuthKey($this->account->authKey());
         return $coin;
     }
 }

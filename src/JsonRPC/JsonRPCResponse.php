@@ -4,15 +4,16 @@ declare(strict_types=1);
 
 namespace Softwarewisdom\Diem\JsonRPC;
 
+use Softwarewisdom\Diem\DiemTypes\CurrencyInfo;
 use Symfony\Component\Serializer\Annotation\SerializedName;
 
 class JsonRPCResponse
 {
     public string $jsonrpc;
     /**
-     * @var mixed
+     * @var CurrencyInfo[]
      * **/
-    public $result;
+    public $result = [];
 
     /**
      *
@@ -35,4 +36,9 @@ class JsonRPCResponse
      * @SerializedName("diem_ledger_timestampusec")
      * **/
     public int $diemLedgerTimestampusec;
+
+    public function addResult(CurrencyInfo $info): void
+    {
+        $this->result[] = $info;
+    }
 }

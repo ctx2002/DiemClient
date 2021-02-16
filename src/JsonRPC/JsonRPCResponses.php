@@ -7,7 +7,6 @@ namespace Softwarewisdom\Diem\JsonRPC;
 use JsonException;
 use Psr\Http\Message\ResponseInterface;
 
-
 /**
  * Class JsonRPCResponses
  * @package Softwarewisdom\Diem\JsonRPC
@@ -29,6 +28,7 @@ class JsonRPCResponses
     public function deserializer(ResponseInterface $response)
     {
         $body = $response->getBody()->getContents();
+        //var_dump($body); die();
         $result = json_decode($body, false, 512, JSON_THROW_ON_ERROR);
         if (is_array($result) === false) {
             return $this->serializer()->deserialize(

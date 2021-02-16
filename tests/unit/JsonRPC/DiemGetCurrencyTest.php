@@ -33,9 +33,16 @@ class DiemGetCurrencyTest extends Unit
 
         $reqs = new JsonRPCRequests();
         $reqs->requests[] = $model;
-        $reqs->requests[] = $model2;
+        //$reqs->requests[] = $model2;
 
         $result = CurrencyClient::exec($reqs, 'https://testnet.diem.com/v1');
-        //var_dump($result); die();
+        //var_dump(json_encode(($result->responses[0])->result)); die();
+        /*$f = $g->serializer()->deserialize(
+            json_encode(($result->responses[0])->result),
+            '\Softwarewisdom\Diem\DiemTypes\CurrencyInfo[]',
+            'json'
+        );
+        var_dump($f); die();*/
+        var_dump($result->responses[0]->result); die();
     }
 }
